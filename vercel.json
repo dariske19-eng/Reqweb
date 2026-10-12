@@ -1,0 +1,18 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/done",
+      "destination": "/api/done"
+    }
+  ],
+  "functions": {
+    "api/card.js": {
+      "includeFiles": "assets/**",
+      "maxDuration": 15
+    },
+    "api/admin/requests.js": {
+      "maxDuration": 30
+    }
+  }
+}
